@@ -1,51 +1,37 @@
-Project: Scary Doll Mounted on an Arduino RC Car
+Project: Beartha
 
-Objective:
 
-The objective of this project is to design and build a wireless RC car that utilizes ultrasonic sensors to detect movement and obstacles in three directions: front, left, and right. The car should move towards the direction where movement or an obstacle is detected. In the absence of movement, the car should scan the surroundings by rotating and identifying the shortest distance to an obstacle, and then move towards it.
+Beartha is doll that incorporates three functions, move, light, and even sound. There are 2 Arduino UNOs and 1 Arduino MEGA used and it was programmed based on its functions respectively. First, on the base which uses sensor that follows an obstacle with an specific distance. One  also on the body of the doll itself that also has a sensor that made its neck containing a servo to rotate 180° and its eye to light. Lastly, it has a creepy sound to make it more attractive. Generally, beartha doll is an output that somehow contain the concept of horror.
 
 Components:
 
-Wireless RC car
+Obstacle-follower car kit
 Ultrasonic sensors (3)
-Arduino Uno or similar microcontroller board
+Servo
+LEDs
+Arduino Uno and Arduino Mega
 Jumper wires
 Batteries
+Doll and dress
 
-Design:
+Functions:
+1. Light
+2. Movement
+3. Sound
 
--Mount the ultrasonic sensors on the front, left, and right sides of the RC car.
--Connect the ultrasonic sensors to the Arduino Uno.
-- Use Arduino code to control the movement of the RC car based on the sensor readings.
+Light: 
+LEDs are installed behind each eye and will light up if the ultrasonic sensor senses an obstacle. Each pair of eyes only light up if the obstacle is at a speciic distance from the sensor. 
 
-Implementation:
+Move: 
+She is attached to an "obstacle-follower car" hidden beneath her dress. The car allows Beartha to move and has its own separate ultrasonic sensor. When the sensor detects and obstacle at a very close distance, the car will follow the obstacle making her chase that obstacle or much better and scarier, a person. 
 
-Movement Detection:
+In addition, Beartha's head is connected to a servo that allows her head to turn to her scary side. Her head will only turn if the obstacle is at a specific distance form the sensor. It will turn back to her normal face after a specified amount of time. 
 
--Continuously read the values from the ultrasonic sensors.
--If the sensor value in a particular direction is lower than a certain threshold, indicating an obstacle or movement, move the RC car in that direction.
-
-Obstacle Avoidance:
-
--When no movement is detected, rotate the RC car slowly and continuously read the sensor values.
--Identify the direction with the shortest distance to an obstacle.
--Move the RC car towards the direction with the shortest distance.
+Sound:
+Beartha has a speaker hidden beneath her dress and can produce various spooky sounds depending on the distance of the obstacle from the sensor.
 
 
-Testing:
 
-Movement Detection:
+Circuit Diagram:
 
--Place objects in various directions around the RC car and observe its movement.
--Adjust the threshold value for the sensor readings to ensure accurate movement detection.
 
-Obstacle Avoidance:
-
--Place obstacles in various configurations around the RC car and observe its scanning behavior.
--Verify that the RC car correctly identifies the shortest distance to an obstacle and moves accordingly.
-
-Additional Considerations:
-
--Implement a mechanism to adjust the sensitivity of the ultrasonic sensors to avoid false positives.
--Incorporate a feedback loop to refine the car's movement based on sensor readings.
--Explore the possibility of adding additional sensors for more sophisticated obstacle avoidance and movement patterns.
