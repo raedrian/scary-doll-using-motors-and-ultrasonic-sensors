@@ -1,5 +1,7 @@
 Project: Beartha
 
+![image](https://github.com/raedrian/scary-doll-using-motors-and-ultrasonic-sensors/assets/60420630/65afcdf0-296b-4533-8e04-4d1203a14c15)
+
 
 Beartha is doll that incorporates three functions, move, light, and even sound. There are 2 Arduino UNOs and 1 Arduino MEGA used and it was programmed based on its functions respectively. First, on the base which uses sensor that follows an obstacle with an specific distance. One  also on the body of the doll itself that also has a sensor that made its neck containing a servo to rotate 180° and its eye to light. Lastly, it has a creepy sound to make it more attractive. Generally, beartha doll is an output that somehow contain the concept of horror.
 
@@ -33,5 +35,8 @@ Beartha has a speaker hidden beneath her dress and can produce various spooky so
 
 
 Circuit Diagram:
+
+![image](https://github.com/raedrian/scary-doll-using-motors-and-ultrasonic-sensors/assets/60420630/d9048ec3-2f4a-40ed-8d95-e727fdd8dae4)
+
 
 
